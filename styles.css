@@ -1,0 +1,33 @@
+html, body 
+{
+	height: 100%;
+	margin: 0;
+}
+		
+#map
+{
+	width: 800px; 
+	height: 600px;
+}
+
+/* ocultando boton de zoom box*/
+
+.leaflet-zoom-box-icon{
+	visibility: hidden;
+}
+
+#map > div.leaflet-control-container > div.leaflet-top.leaflet-left > div.leaflet-zoom-box-control.leaflet-bar.leaflet-control{
+	visibility: hidden;
+}
+
+/* ocultando componente de medicion area y distancia, solo si se instancia el componente en el mapa*/
+
+.leaflet-control-measure {
+	visibility: hidden;	
+}
+
+.leaflet-measure-contents{
+	visibility: hidden;	
+}
+
+			
